@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ChronoPulse X1 — Next-Gen Smartwatch</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <div class="brand">CHRONO<span>PULSE</span></div>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#specs">Specifications</a>
+      <a href="#reviews">Reviews</a>
+      <a href="#buy">Buy Now</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <div>
+        <span class="hero-tag">NEW 2026 FLAGSHIP EDITION</span>
+        <h1>Precision Health on Your Wrist.</h1>
+        <p>Aerospace-grade titanium casing, 14-day battery endurance, and medical-grade biometric tracking built for athletes and creators.</p>
+        <a href="#buy" class="btn">Pre-Order — $299</a>
+      </div>
+      <div class="hero-media">
+        <img src="https://images.unsplash.com/photo-1579586337278-3befd40fd17a?auto=format&fit=crop&w=700&q=80" alt="ChronoPulse X1 Smartwatch" />
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="container">
+    <h2 class="section-title">Engineered Beyond Limits</h2>
+    <p class="section-sub">Every component optimized for clarity, durability, and endurance.</p>
+    <div class="features-grid">
+      <div class="feature-box">
+        <h3>2000-Nit AMOLED</h3>
+        <p>Crystal-clear sapphire glass display readable even under harsh midday sunlight.</p>
+      </div>
+      <div class="feature-box">
+        <h3>14-Day Battery Life</h3>
+        <p>Ultra-efficient dual-chip architecture keeps you moving for two full weeks on one charge.</p>
+      </div>
+      <div class="feature-box">
+        <h3>Dual-Band GPS</h3>
+        <p>Pinpoint route tracking across dense cityscapes, mountain trails, and open water.</p>
+      </div>
+      <div class="feature-box">
+        <h3>10 ATM Waterproof</h3>
+        <p>Certified for high-speed water sports and recreational diving up to 100 meters.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="specs" class="specs-wrapper">
+    <h2 class="section-title">Technical Specifications</h2>
+    <p class="section-sub">Complete hardware breakdown</p>
+    <table>
+      <tr><th>Display</th><td>1.47" LTPO AMOLED (480 x 480 px), Always-On</td></tr>
+      <tr><th>Case Material</th><td>Grade-5 Brushed Titanium with Ceramic Back</td></tr>
+      <tr><th>Sensors</th><td>Optical Heart Rate, SpO2, ECG, Skin Temp, Barometer</td></tr>
+      <tr><th>Connectivity</th><td>Bluetooth 5.4, Wi-Fi, NFC Tap-to-Pay, Dual-Frequency GNSS</td></tr>
+      <tr><th>Weight</th><td>38g (without strap)</td></tr>
+    </table>
+  </section>
+
+  <section id="reviews" class="container">
+    <h2 class="section-title">Verified Buyer Reviews</h2>
+    <p class="section-sub">Rated 4.9/5 by over 3,400 early adopters</p>
+    <div class="reviews-grid">
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"The battery life is unreal. Ten days in with daily GPS runs and I still have 35% left."</p>
+        <strong class="reviewer">— Rohan K., Marathon Runner</strong>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Lightweight titanium build feels premium enough for formal meetings and tough enough for gym sessions."</p>
+        <strong class="reviewer">— Sneha M., Product Designer</strong>
+      </div>
+      <div class="review-card">
+        <div class="stars">★★★★★</div>
+        <p>"Best screen brightness I have ever seen on a wearable. Zero lag in the interface."</p>
+        <strong class="reviewer">— David T., Tech Reviewer</strong>
+      </div>
+    </div>
+  </section>
+
+  <section id="buy" class="container">
+    <div class="buy-box">
+      <div>
+        <h2>ChronoPulse X1 Titanium Edition</h2>
+        <p class="buy-note">Includes magnetic fast charger + extra fluoroelastomer sport band.</p>
+      </div>
+      <div class="buy-action">
+        <div class="price">$299</div>
+        <button class="btn buy-btn" onclick="alert('ChronoPulse X1 added to your cart!')">Order Now</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>&copy; 2026 ChronoPulse Wearables Inc. All rights reserved.</footer>
+</body>
+</html>
