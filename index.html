@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Developer | Personal Portfolio</title>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --surface: #1e293b;
+      --text: #f8fafc;
+      --muted: #94a3b8;
+      --accent: #38bdf8;
+      --accent-hover: #0284c7;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; font-family: 'Segoe UI', system-ui, sans-serif; }
+    body { background: var(--bg); color: var(--text); line-height: 1.6; }
+
+    /* Navigation */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(15, 23, 42, 0.9); backdrop-filter: blur(10px);
+      border-bottom: 1px solid #334155;
+    }
+    .nav-container {
+      max-width: 1100px; margin: auto; padding: 1rem 1.5rem;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .logo { font-size: 1.4rem; font-weight: 700; color: var(--accent); text-decoration: none; }
+    nav ul { list-style: none; display: flex; gap: 1.5rem; }
+    nav a { color: var(--text); text-decoration: none; font-weight: 500; transition: color 0.2s; }
+    nav a:hover { color: var(--accent); }
+
+    /* Sections */
+    section { max-width: 1100px; margin: auto; padding: 4.5rem 1.5rem; }
+    h2 { font-size: 2rem; margin-bottom: 2rem; border-left: 4px solid var(--accent); padding-left: 0.75rem; }
+
+    /* Hero */
+    .hero {
+      display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 2rem; align-items: center;
+      min-height: 80vh;
+    }
+    .hero h1 { font-size: clamp(2.2rem, 5vw, 3.5rem); line-height: 1.15; margin-bottom: 1rem; }
+    .hero span { color: var(--accent); }
+    .hero p { color: var(--muted); font-size: 1.1rem; margin-bottom: 1.8rem; }
+    .btn {
+      display: inline-block; background: var(--accent); color: #0f172a;
+      padding: 0.75rem 1.5rem; border-radius: 8px; font-weight: 700;
+      text-decoration: none; border: none; cursor: pointer; transition: 0.2s;
+    }
+    .btn:hover { background: var(--accent-hover); color: #fff; }
+    .profile-card {
+      background: var(--surface); border-radius: 16px; padding: 2rem;
+      text-align: center; border: 1px solid #334155;
+    }
+    .avatar {
+      width: 150px; height: 150px; border-radius: 50%; object-fit: cover;
+      border: 4px solid var(--accent); margin-bottom: 1rem;
+    }
+
+    /* Grid Layouts */
+    .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
+    .card {
+      background: var(--surface); padding: 1.5rem; border-radius: 12px;
+      border: 1px solid #334155; transition: transform 0.2s;
+    }
+    .card:hover { transform: translateY(-5px); border-color: var(--accent); }
+    .card h3 { color: var(--accent); margin-bottom: 0.5rem; }
+    .tag {
+      display: inline-block; background: #0f172a; color: var(--accent);
+      padding: 0.25rem 0.65rem; border-radius: 99px; font-size: 0.8rem; margin: 0.5rem 0.25rem 0 0;
+    }
+
+    /* Achievements */
+    .achievement-item {
+      display: flex; align-items: center; gap: 1rem;
+      background: var(--surface); padding: 1.2rem; border-radius: 10px; margin-bottom: 1rem;
+    }
+    .badge { font-size: 1.5rem; }
+
+    /* Contact Form */
+    form { display: grid; gap: 1rem; max-width: 600px; }
+    input, textarea {
+      width: 100%; padding: 0.85rem; border-radius: 8px; border: 1px solid #334155;
+      background: var(--surface); color: var(--text); font-size: 1rem;
+    }
+    input:focus, textarea:focus { outline: 2px solid var(--accent); }
+
+    footer { text-align: center; padding: 2rem; border-top: 1px solid #334155; color: var(--muted); }
+
+    @media (max-width: 768px) {
+      .hero { grid-template-columns: 1fr; text-align: center; }
+      nav ul { gap: 0.9rem; font-size: 0.9rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="nav-container">
+      <a href="#" class="logo">&lt;DevPortfolio /&gt;</a>
+      <nav>
+        <ul>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div>
+      <h1>Hi, I'm <span>Alex Verma</span><br />Full-Stack Web Developer</h1>
+      <p>Computer Science undergrad passionate about crafting responsive web interfaces, clean backend architectures, and intelligent user experiences.</p>
+      <a href="#projects" class="btn">Explore My Work</a>
+    </div>
+    <div class="profile-card">
+      <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80" alt="Student Profile" class="avatar" />
+      <h3>B.Tech CSE '27</h3>
+      <p style="color: var(--muted);">Frontend &amp; Python Enthusiast</p>
+    </div>
+  </section>
+
+  <section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>Frontend Development</h3>
+        <p>Semantic HTML5, Modern CSS3 (Grid &amp; Flexbox), Responsive Design, JavaScript ES6+.</p>
+      </div>
+      <div class="card">
+        <h3>Backend &amp; Databases</h3>
+        <p>Python, FastAPI, RESTful APIs, SQLite, PostgreSQL, Supabase Authentication.</p>
+      </div>
+      <div class="card">
+        <h3>Tools &amp; Workflow</h3>
+        <p>Git, GitHub, VS Code, Linux CLI, Figma Wireframing, Docker Basics.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Featured Projects</h2>
+    <div class="grid-3">
+      <div class="card">
+        <h3>EcoRoute Optimizer</h3>
+        <p>A fleet logistics dashboard predicting fuel consumption and minimizing carbon emissions across delivery routes.</p>
+        <span class="tag">HTML/CSS</span><span class="tag">Python</span><span class="tag">Leaflet</span>
+      </div>
+      <div class="card">
+        <h3>CampusPulse Portal</h3>
+        <p>Centralized college event registration system with live seat availability and schedule filtering.</p>
+        <span class="tag">Responsive UI</span><span class="tag">REST API</span>
+      </div>
+      <div class="card">
+        <h3>TaskFlow Kanban</h3>
+        <p>Minimalist productivity board with priority tagging, deadline alerts, and dark-mode styling.</p>
+        <span class="tag">CSS Grid</span><span class="tag">JavaScript</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <div class="achievement-item"><span class="badge">🏆</span><div><strong>1st Place — Smart Campus Hackathon 2026</strong><p style="color:var(--muted)">Built an accessible real-time transit tracker in 24 hours.</p></div></div>
+    <div class="achievement-item"><span class="badge">⭐</span><div><strong>5-Star Problem Solver on HackerRank</strong><p style="color:var(--muted)">Solved 250+ algorithmic and data structure challenges.</p></div></div>
+  </section>
+
+  <section id="contact">
+    <h2>Get In Touch</h2>
+    <form onsubmit="event.preventDefault(); alert('Message sent! Thank you for reaching out.');">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Project details or message..." required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </section>
+
+  <footer>&copy; 2026 Alex Verma. Built with pure HTML5 &amp; CSS3.</footer>
+</body>
+</html>
